@@ -21,7 +21,19 @@ body {
   color: var(--main-color);
 }
 
+.container{
+  width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.section{
+  padding: 94px 0;
+}
+
+
 /*logo*/
+
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -74,7 +86,9 @@ body {
 /*hero*/
 .hero {
   background-color: var(--background-gray-color);
-  padding: 0px 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -87,9 +101,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .button-service {
@@ -106,10 +118,6 @@ body {
   width: 200px;
   min-height: 50px;
   border: none;
-  padding: 0px 0px 0px 0px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 200px;
 }
 
 /*features*/
@@ -128,6 +136,7 @@ body {
   text-transform: uppercase;
   color: var(--main-color);
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .feature-text {
@@ -135,6 +144,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-gray-color);
+  margin-top: 10px;
 }
 
 /*about-us*/
@@ -145,10 +155,19 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 .about-us-list {
   list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.about-us-list:last-child{
+  margin-right: 0;
 }
 
 /*our-team*/
@@ -178,6 +197,10 @@ body {
 
 .our-team {
   background-color: var(--light-color);
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0px;
 }
 
 /*footer*/
@@ -259,19 +282,11 @@ body {
 
 
 
-.container{
-  width: 1200px;
-  margin: auto;
-  padding: 0 15px;
-}
-
-.section{
-  padding:94px 0;
-}
 
 .header{
 padding-top: 24px;
 padding-bottom: 24px;
+padding-left: 215px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -288,16 +303,93 @@ align-items: center;
 }
 
 .navigation{
-  margin-left: 93px;
   gap: 46px;
+  margin-left: 93px;
 }
 
 .contacts-header{
+display: flex;
 justify-content: space-between;
 gap: 50px;
 }
 
-
-.container > .button-service{
- display: flex;
+.hero-content{
+  text-align: center;
+  width: 700px;
 }
+
+.link-contact{
+  display: inline;
+  margin-right: 50px;
+}
+
+.link-contact:last-child{
+  margin-right: 0px;
+}
+
+
+
+
+.features{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list-item{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.features-list-item:last-child {
+  margin-right: 0px;
+}
+
+.about-us{
+  text-align: center;
+}
+
+.our-work{
+  margin-top: -94px;
+}
+
+.our-team
+
+.team-people{
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+.team-photos{
+  margin-bottom: 30px;
+}
+
+
+.team-people-photos:last-child{
+  margin-right: 0px;
+}
+
+.programmers-description{
+  padding-top: 30px;
+ }
+  
+
+.programmers-team{
+  margin-bottom: 30px;
+}
+
+.programmers{
+  margin-bottom: 10px;}
+  
+
+
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+ 
+}
+
+  
+
+
+
