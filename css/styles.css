@@ -23,11 +23,30 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0px 15px;
 }
 
 .section {
   padding: 94px 0px;
+}
+
+/* header-styles */
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-line {
+  border-bottom: 1px solid #ececec;
 }
 
 /*logo*/
@@ -70,7 +89,18 @@ body {
 
 .link-contact {
   color: var(--main-gray-color);
+  display: inline;
+  margin-right: 50px;
 }
+
+.navigation-menu {
+  justify-content: space-between;
+}
+
+.navigation {
+  gap: 46px;
+}
+
 
 /*header contacts*/
 
@@ -81,6 +111,18 @@ body {
   color: var(--brand-color);
 }
 
+
+.contacts-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.menu-nav:last-child {
+  margin-right: 0px;
+}
+
+
 /*hero*/
 .hero {
   background-color: var(--background-gray-color);
@@ -90,6 +132,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.hero-content {
+  text-align: center;
+  width: 700px;
+}
+
 
 .header-main {
   font-weight: 900;
@@ -118,6 +166,8 @@ body {
   border: none;
 }
 
+
+
 /*features*/
 
 .features-list .features-list-item {
@@ -145,6 +195,22 @@ body {
   margin-top: 10px;
 }
 
+
+.features-list-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.features-list-item:last-child {
+  margin-right: 0px;
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
 /*about-us*/
 
 .title {
@@ -168,10 +234,19 @@ body {
   margin-right: 0;
 }
 
+.about-us {
+  text-align: center;
+}
+
+.our-work {
+  margin-top: -94px;
+}
+
 /*our-team*/
 
 .team-people {
   list-style-type: none;
+  margin-left: -15px;
 }
 
 .team-people .programmers {
@@ -200,6 +275,34 @@ body {
   padding-bottom: 94px;
   margin-bottom: 0px;
 }
+
+.team-people {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+.team-photos {
+  margin-bottom: 30px;
+}
+
+.team-people-photos:last-child {
+  margin-right: 0px;
+}
+
+.programmers-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.programmers-team {
+  padding-bottom: 30px;
+}
+
+.programmers {
+  margin-bottom: 10px;
+}
+
 
 /*footer*/
 .contacts {
@@ -231,10 +334,27 @@ body {
   list-style-type: none;
 }
 
+.logo-footer{
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+.footer-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
 /*portfolio*/
 
 .buttons-main {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .buttons-main .button-list {
@@ -247,6 +367,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  padding: 6px 22px;
 }
 
 .buttons-main .button-list:hover,
@@ -261,16 +382,22 @@ body {
 
 .portfolio-projects {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
 }
 
-.portfolio-projects .portfolio-images {
-  border: 1px solid var(--projects-color);
+.portfolio-projects-item{
+  flex-basis: calc((100% - 60px) / 3);
 }
+
 
 .portfolio-projects .project {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .portfolio-projects .project-item {
@@ -280,111 +407,26 @@ body {
   color: var(--main-gray-color);
 }
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-line {
-  border-bottom: 1px solid #ececec;
-}
-
-.navigation-menu {
-  justify-content: space-between;
-}
-
-.navigation {
-  gap: 46px;
-}
-
-.contacts-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-}
-
-.hero-content {
-  text-align: center;
-  width: 700px;
-}
-
-.link-contact {
-  display: inline;
-  margin-right: 50px;
-}
-
-.menu-nav:last-child {
-  margin-right: 0px;
-}
-
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.features-list-item {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.features-list-item:last-child {
-  margin-right: 0px;
-}
-
-.about-us {
-  text-align: center;
-}
-
-.our-work {
-  margin-top: -94px;
-}
-
-.our-team {
-}
-
-.team-people {
-  display: flex;
-  gap: 30px;
-  text-align: center;
-}
-
-.team-photos {
-  margin-bottom: 30px;
-}
-
-.team-people-photos:last-child {
-  margin-right: 0px;
-}
-
-.programmers-description {
-  padding-top: 30px;
-}
-
-.programmers-team {
-  padding-bottom: 30px;
-}
-
-.programmers {
-  margin-bottom: 10px;
-}
-
-
-.header-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-box {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.logo-footer{
+.portfolio-projects-item .portfolio-images{
   display: block;
-  margin-bottom: 20px;
 }
+
+.portfolio-projects-item .portfolio-description{
+  padding: 20px 24px;
+  border: 1px solid var(--projects-color); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
