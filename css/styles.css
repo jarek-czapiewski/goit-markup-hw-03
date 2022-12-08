@@ -27,11 +27,12 @@ body {
 }
 
 .section {
-  padding: 94px 0px;
+  padding: 94px 0;
+
 }
 
 /* header-styles */
-.header-nav{
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,7 +102,6 @@ body {
   gap: 46px;
 }
 
-
 /*header contacts*/
 
 .link:hover,
@@ -110,7 +110,6 @@ body {
 .link-footer:focus {
   color: var(--brand-color);
 }
-
 
 .contacts-header {
   display: flex;
@@ -122,22 +121,21 @@ body {
   margin-right: 0px;
 }
 
-
 /*hero*/
 .hero {
   background-color: var(--background-gray-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .hero-content {
   text-align: center;
-  width: 700px;
+  padding-left: 252px;
+  padding-right: 252px;
 }
-
 
 .header-main {
   font-weight: 900;
@@ -166,13 +164,9 @@ body {
   border: none;
 }
 
-
-
 /*features*/
 
 .features-list .features-list-item {
-  width: 270px;
-  height: 101px;
   list-style: none;
 }
 
@@ -195,6 +189,9 @@ body {
   margin-top: 10px;
 }
 
+.features-list {
+  display: flex;
+}
 
 .features-list-item {
   display: inline-block;
@@ -209,7 +206,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 
 /*about-us*/
 
@@ -303,7 +299,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 /*footer*/
 .contacts {
   background-color: var(--background-gray-color);
@@ -334,17 +329,15 @@ body {
   list-style-type: none;
 }
 
-.logo-footer{
+.logo-footer {
   display: block;
   margin-bottom: 20px;
 }
-
 
 .footer-box {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 
 /*portfolio*/
 
@@ -385,13 +378,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
 }
 
-.portfolio-projects-item{
+.portfolio-projects-item {
   flex-basis: calc((100% - 60px) / 3);
 }
-
 
 .portfolio-projects .project {
   font-size: 18px;
@@ -407,26 +398,11 @@ body {
   color: var(--main-gray-color);
 }
 
-.portfolio-projects-item .portfolio-images{
+.portfolio-projects-item .portfolio-images img {
   display: block;
 }
 
-.portfolio-projects-item .portfolio-description{
+.portfolio-projects-item .portfolio-description {
   padding: 20px 24px;
-  border: 1px solid var(--projects-color); 
+  border: 1px solid var(--projects-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
